@@ -7,7 +7,6 @@ rock = '''
       (____)
 ---.__(___)
 '''
-
 paper = '''
     _______
 ---'   ____)____
@@ -16,7 +15,6 @@ paper = '''
          _______)
 ---.__________)
 '''
-
 scissors = '''
     _______
 ---'   ____)____
@@ -25,9 +23,35 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+welcome_message = '''
+. ____ ____ ____ _  _      ___  ____ ___  ____ ____      ____ ____ _ ____ ____ ____ ____ ____ . 
+' |__/ |  | |    |_/       |__] |__| |__] |___ |__/      [__  |    | [__  [__  |  | |__/ [__  ' 
+  |  \ |__| |___ | \_ .    |    |  | |    |___ |  \ .    ___] |___ | ___] ___] |__| |  \ ___]   
+                      '                             '                                           
+                                    ____ ____ _  _ ____                                         
+                                    | __ |__| |\/| |___                                         
+                                    |__] |  | |  | |___                                         
+'''
+win_message = '''
+_   _ ____ _  _    _ _ _ _ _  _   /
+ \_/  |  | |  |    | | | | |\ |  / 
+  |   |__| |__|    |_|_| | | \| .  
+                                   
+'''
+lose_massage = '''
+_   _ ____ _  _    _    ____ ____ ____   /
+ \_/  |  | |  |    |    |  | [__  |___  / 
+  |   |__| |__|    |___ |__| ___] |___ .  
+                                          
+'''
+draw_message = '''
+_ ___ . ____    ____    ___  ____ ____ _ _ _   /
+|  |  ' [__     |__|    |  \ |__/ |__| | | |  / 
+|  |    ___]    |  |    |__/ |  \ |  | |_|_| .  
+                                                
+'''
 
-
-print("Welcome to the game 'Rock, Paper, Scissors'")
+print(welcome_message)
 flag = False
 drawings = [rock, paper, scissors]
 player_choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
@@ -54,7 +78,7 @@ while True:
     print(computer_drawing)
 
     if player_choice == computer_choice:
-        print("It's a draw!")
+        print(draw_message)
         break
 
     if player_choice == 0 and computer_choice == 2:
@@ -65,8 +89,8 @@ while True:
         flag = True
 
     if flag:
-        print("You win!")
+        print(win_message)
     else:
-        print("You lose!")
+        print(lose_massage)
 
     break
