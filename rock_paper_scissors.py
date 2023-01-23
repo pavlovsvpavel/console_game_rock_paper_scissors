@@ -51,7 +51,6 @@ _ ___ . ____    ____    ___  ____ ____ _ _ _   /
 |  |    ___]    |  |    |__/ |  \ |  | |_|_| .  
                                                 
 '''
-
 print(welcome_message)
 drawings = [rock, paper, scissors]
 
